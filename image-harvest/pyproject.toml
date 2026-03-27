@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "image-harvest"
+version = "0.1.0"
+description = "A fast CLI tool to discover and batch download images from web pages."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Image Harvest Contributors"}
+]
+keywords = ["image", "downloader", "scraper", "batch", "cli", "web-scraping", "gallery"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Multimedia :: Graphics",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "requests>=2.28.0",
+    "beautifulsoup4>=4.11.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "responses>=0.23.0",
+]
+
+[project.urls]
+Homepage = "https://thunderbit.com/"
+Repository = "https://github.com/thunderbit/image-harvest"
+Issues = "https://github.com/thunderbit/image-harvest/issues"
+
+[project.scripts]
+image-harvest = "image_extractor.cli:main"
+imgx = "image_extractor.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["image_extractor*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
