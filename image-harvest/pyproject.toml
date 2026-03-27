@@ -43,8 +43,8 @@ dev = [
 
 [project.urls]
 Homepage = "https://thunderbit.com/"
-Repository = "https://github.com/thunderbit/image-harvest"
-Issues = "https://github.com/thunderbit/image-harvest/issues"
+Repository = "https://github.com/thunderbit-operations/web_data_collection_tools/tree/main/image-harvest"
+Issues = "https://github.com/thunderbit-operations/web_data_collection_tools/issues"
 
 [project.scripts]
 image-harvest = "image_extractor.cli:main"

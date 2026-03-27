@@ -46,8 +46,8 @@ dev = [
 
 [project.urls]
 Homepage = "https://thunderbit.com/"
-Repository = "https://github.com/thunderbit/phone-harvest"
-Issues = "https://github.com/thunderbit/phone-harvest/issues"
+Repository = "https://github.com/thunderbit-operations/web_data_collection_tools/tree/main/phone-harvest"
+Issues = "https://github.com/thunderbit-operations/web_data_collection_tools/issues"
 
 [project.scripts]
 phone-harvest = "phone_extractor.cli:main"
